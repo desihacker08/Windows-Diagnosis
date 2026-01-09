@@ -20,6 +20,8 @@ _BIOS/UEFI cannot find a bootloader_
 - Rebuild BCD
 
 ## ❌ 2. BOOTMGR is Missing
+![Image](https://github.com/user-attachments/assets/26b5d407-690d-41ee-8d29-55e965668171)
+
 **Menas:** _Legacy bootloader is broken_
 
 
@@ -35,6 +37,7 @@ bootrec /rebuildbcd
 ```
 
 ## ❌ 3. Windows Boot Manager Missing
+![Image](https://github.com/user-attachments/assets/cf2f61bc-6cdb-4f9b-bcb3-7b397d67483e)
 
 ### Meaning
 
@@ -64,6 +67,7 @@ bcdboot C:\Windows /s S: /f UEFI
 ---
 
 ## ❌ 4. Error Code: 0xc000000f / 0xc0000225
+![Image](https://github.com/user-attachments/assets/58ae4f77-ffd6-4c06-83ca-53c22e100b1f)
 
 ### Meaning
 
@@ -92,6 +96,7 @@ bcdboot C:\Windows
 ---
 
 ## ❌ 5. Automatic Repair Loop
+![Image](https://github.com/user-attachments/assets/e19eafd6-1dbd-424c-b271-a609215ee7ef)
 
 ### Meaning
 
@@ -119,6 +124,7 @@ sfc /scannow /offbootdir=C:\ /offwindir=C:\Windows
 ---
 
 ## ❌ 6. INACCESSIBLE_BOOT_DEVICE (BSOD)
+![Image](https://github.com/user-attachments/assets/c1759d96-e038-4c44-8cb2-89c7eff0de23)
 
 ### Meaning
 
@@ -139,6 +145,7 @@ sfc /scannow /offbootdir=C:\ /offwindir=C:\Windows
 ---
 
 ## ❌ 7. Black Screen with Cursor
+![Image](https://github.com/user-attachments/assets/3754c37b-3bc6-4bb7-a1cd-75f4006c0f3b)
 
 ### Meaning
 
@@ -174,5 +181,6 @@ sfc /scannow /offbootdir=C:\ /offwindir=C:\Windows
 > 0xc0000225	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BCD
 
 > Repair loop	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Disk / SFC
+
 
 > Inaccessible boot	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SATA mode
